@@ -1,28 +1,43 @@
 import "../App.css";
 import bigboy from "../assets/bigboy.svg";
+import {
+  FaSquareInstagram,
+  FaGithub,
+  FaSquareXTwitter,
+  FaLinkedin,
+} from "react-icons/fa6";
+import ScrollToTop from "./ScrollToTop";
+const links = [
+  {
+    link: "https://github.com/huda-7077",
+    icon: <FaGithub className="h-full w-full" />,
+  },
+  {
+    link: "https://x.com/huda7077",
+    icon: <FaSquareXTwitter className="h-full w-full" />,
+  },
+  {
+    link: "https://id.linkedin.com/in/muhammad-masyhuda-8b590a1a7",
+    icon: <FaLinkedin className="h-full w-full" />,
+  },
+  {
+    link: "https://www.instagram.com/mhuda7077/",
+    icon: <FaSquareInstagram className="h-full w-full" />,
+  },
+];
 const Jumbotron = () => {
   return (
     <section className="relative isolate mx-auto flex h-[716px] w-[1440px] flex-row items-start px-[80px] py-[60px]">
       <div className="absolute left-[112px] top-[620px] z-[1] flex h-[64px] w-[320px] flex-row items-start gap-8 p-1">
-        {/* Button 1 */}
-        <button className="flex h-[56px] w-[56px] flex-row items-center justify-center gap-2 rounded-md bg-black p-4">
-          <div className="h-[20px] w-[20px] bg-white" />
-        </button>
-
-        {/* Button 2 */}
-        <button className="flex h-[56px] w-[56px] flex-row items-center justify-center gap-2 rounded-md border-2 border-black p-4">
-          <div className="h-[20px] w-[20px] bg-black" />
-        </button>
-
-        {/* Button 3 */}
-        <button className="flex h-[56px] w-[56px] flex-row items-center justify-center gap-2 rounded-md border-2 border-black p-4">
-          <div className="h-[20px] w-[20px] bg-black" />
-        </button>
-
-        {/* Button 4 */}
-        <button className="flex h-[56px] w-[56px] flex-row items-center justify-center gap-2 rounded-md border-2 border-black p-4">
-          <div className="h-[20px] w-[20px] bg-black" />
-        </button>
+        {links.map((link, index) => (
+          <button
+            key={index}
+            className="flex h-[56px] w-[56px] flex-row items-center justify-center gap-2 rounded-md border-2 border-black p-4 transition-colors duration-300 hover:bg-black hover:text-white"
+            onClick={() => window.open(link.link, "_blank")}
+          >
+            <div className="relative h-[24px] w-[24px]">{link.icon}</div>
+          </button>
+        ))}
       </div>
       <div className="relative z-[0] flex h-[596px] w-[1280px] flex-row items-center justify-between px-[32px]">
         <div className="absolute left-0 z-10 mx-auto flex h-[376px] w-[700px] flex-col items-start gap-[48px] py-[20px]">
@@ -59,6 +74,7 @@ const Jumbotron = () => {
           <img className="object-cover" src={bigboy} alt="bigboy" />
         </div>
       </div>
+      <ScrollToTop />
     </section>
   );
 };

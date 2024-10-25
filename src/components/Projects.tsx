@@ -1,6 +1,10 @@
+import imageMe from "../assets/image.png";
 const Projects = () => {
   return (
-    <div className="mx-auto flex h-[1824px] w-[1440px] flex-col items-start bg-black p-[60px] px-[80px]">
+    <div
+      id="projects"
+      className="mx-auto flex h-[1824px] w-[1440px] flex-col items-start bg-black p-[60px] px-[80px]"
+    >
       <div className="flex h-[1704px] w-[1280px] flex-col items-start gap-5 px-8">
         {/* Heading */}
         <div className="flex h-[96px] w-[1216px] flex-row items-center justify-center gap-4 py-5">
@@ -14,9 +18,14 @@ const Projects = () => {
 
         {/* Project 1 */}
         <div className="flex h-[516px] w-[1216px] flex-row items-center gap-10 py-5">
-          {/* Image */}
           <div className="flex h-[476px] w-[594px] flex-row items-center">
             <div className="h-[397.73px] w-[530px] rounded-[18.7611px] bg-[url('/path-to-your-image/profile-pic.jpg')] shadow-[0_8px_18px_-6px_rgba(24,39,75,0.12),0_12px_42px_-4px_rgba(24,39,75,0.12)]"></div>
+            <img
+              className="rounded-[2rem] object-cover"
+              // src="https://i.seadn.io/s/raw/files/4393e64fb2353c32b857bc19fa17f31d.png?auto=format&dpr=1&w=1000"
+              src={imageMe}
+              alt="Me"
+            />
           </div>
           {/* Details */}
           <div className="flex h-[296px] w-[582px] flex-col items-start justify-center gap-6">
@@ -53,6 +62,12 @@ const Projects = () => {
           {/* Image */}
           <div className="flex h-[476px] w-[594px] flex-row items-center justify-end">
             <div className="h-[397.73px] w-[530px] rounded-[18.7611px] bg-[url('/path-to-your-image/mock-up.jpg')] shadow-[0_8px_18px_-6px_rgba(24,39,75,0.12),0_12px_42px_-4px_rgba(24,39,75,0.12)]"></div>
+            <img
+              className="rounded-[2rem] object-cover"
+              // src="https://i.seadn.io/s/raw/files/4393e64fb2353c32b857bc19fa17f31d.png?auto=format&dpr=1&w=1000"
+              src={imageMe}
+              alt="Me"
+            />
           </div>
         </div>
 
@@ -61,6 +76,12 @@ const Projects = () => {
           {/* Image */}
           <div className="flex h-[476px] w-[594px] flex-row items-center">
             <div className="h-[397.73px] w-[530px] rounded-[18.7611px] bg-[url('/path-to-your-image/banner-mockup.jpg')] shadow-[0_8px_18px_-6px_rgba(24,39,75,0.12),0_12px_42px_-4px_rgba(24,39,75,0.12)]"></div>
+            <img
+              className="rounded-[2rem] object-cover"
+              // src="https://i.seadn.io/s/raw/files/4393e64fb2353c32b857bc19fa17f31d.png?auto=format&dpr=1&w=1000"
+              src={imageMe}
+              alt="Me"
+            />
           </div>
           {/* Details */}
           <div className="flex h-[302px] w-[582px] flex-col items-start justify-center gap-6">

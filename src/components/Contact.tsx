@@ -1,6 +1,9 @@
 const Contact = () => {
   return (
-    <div className="mx-auto flex h-[604px] w-[1440px] flex-col items-start p-[60px] px-[80px]">
+    <div
+      id="contact"
+      className="mx-auto flex h-[604px] w-[1440px] flex-col items-start p-[60px] px-[80px]"
+    >
       <div className="flex h-[484px] w-[1280px] flex-row items-center justify-between gap-10 px-8">
         {/* Column */}
         <div className="mx-auto flex h-[484px] w-[608px] flex-col items-start justify-center gap-6 py-5">

@@ -1,13 +1,20 @@
 // import xboy from "../assets/xboy.svg";
+import imageMe from "../assets/image.png";
+// import ScrollToTop from "./ScrollToTop";
+
 const AboutMe = () => {
   return (
-    <div className="mx-auto flex h-[692px] w-[1440px] flex-row items-center justify-center p-[60px_80px]">
+    <div
+      id="about"
+      className="mx-auto flex h-[692px] w-[1440px] flex-row items-center justify-center p-[60px_80px]"
+    >
       <div className="flex h-[572px] w-[1280px] flex-row items-center justify-between p-[0px_32px]">
         <div className="mx-auto h-[572px] w-[525.45px]">
           <img
             className="rounded-[2rem] object-cover"
-            src="https://i.seadn.io/s/raw/files/4393e64fb2353c32b857bc19fa17f31d.png?auto=format&dpr=1&w=1000"
-            alt="bigboy"
+            // src="https://i.seadn.io/s/raw/files/4393e64fb2353c32b857bc19fa17f31d.png?auto=format&dpr=1&w=1000"
+            src={imageMe}
+            alt="Me"
           />
         </div>
         <div className="mx-auto flex h-[572px] w-[610px] flex-col items-start gap-5 p-0">
@@ -51,6 +58,7 @@ const AboutMe = () => {
           </p>
         </div>
       </div>
+      {/* <ScrollToTop /> */}
     </div>
   );
 };

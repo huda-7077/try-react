@@ -67,7 +67,10 @@ const skills = [
 
 const Skills = () => {
   return (
-    <div className="mx-auto flex h-[728px] w-[1440px] flex-col items-center justify-center p-[60px_80px]">
+    <div
+      id="skills"
+      className="mx-auto flex h-[728px] w-[1440px] flex-col items-center justify-center p-[60px_80px]"
+    >
       <div className="flex h-[608px] w-[1280px] flex-col items-start gap-5 px-8">
         {/* Header Row */}
         <div className="flex h-[96px] w-[1216px] flex-row items-center justify-center gap-4 py-5 text-[48px] font-normal leading-[56px] tracking-[-0.02em] text-black">
