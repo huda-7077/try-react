@@ -1,8 +1,8 @@
 const Navbar = () => {
   return (
-    <header className="mx-auto flex h-[104px] w-[1440px] flex-row items-start px-[80px] py-[24px]">
+    <header className="font-sora mx-auto flex h-[104px] w-[1440px] flex-row items-start px-[80px] py-[24px] text-[20px] font-semibold capitalize leading-[24px] tracking-[-0.02em]">
       <div className="mx-auto flex h-[40px] w-[139.91px] flex-row items-center gap-[12px]">
-        <h1>logo</h1>
+        <h1>MM</h1>
         <h1>Personal</h1>
       </div>
       <div className="flex h-[56px] w-[1280px] flex-row items-center justify-between px-[32px]">

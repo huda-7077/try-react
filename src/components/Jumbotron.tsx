@@ -1,3 +1,4 @@
+import "../App.css";
 import bigboy from "../assets/bigboy.svg";
 const Jumbotron = () => {
   return (
@@ -26,26 +27,26 @@ const Jumbotron = () => {
       <div className="relative z-[0] flex h-[596px] w-[1280px] flex-row items-center justify-between px-[32px]">
         <div className="absolute left-0 z-10 mx-auto flex h-[376px] w-[700px] flex-col items-start gap-[48px] py-[20px]">
           <div className="relative flex h-[336px] w-[700px] flex-col items-start gap-[32px]">
-            <div className="font-sora flex h-[208px] w-[700px] flex-col items-start gap-5 p-0 text-[48px] leading-[56px] tracking-[-0.02em] text-black">
+            <div className="font-sora flex h-[208px] w-[700px] flex-col items-start gap-5 p-0 text-[48px] font-normal leading-[56px] tracking-[-0.02em] text-black">
               <div className="flex h-[56px] w-auto flex-row items-start gap-4 p-0">
-                <h2 className="h-[56px] font-normal">I’m</h2>
+                <h2 className="h-[56px]">I’m</h2>
                 <h2 className="h-[56px] font-extrabold">Muhammad Masyhuda.</h2>
               </div>
 
-              <div className="flex h-[56px] w-auto flex-row items-start gap-4 p-0">
-                <h2 className="h-[56px] font-extrabold">Frontend</h2>
-                <h2 className="border-3 h-[56px] border-black font-extrabold">
+              <div className="flex h-[56px] flex-row items-start gap-4 p-0 font-extrabold">
+                <h2 className="h-[56px]">Full Stack</h2>
+                <h2 className="custom-outline h-[56px] text-white outline-black">
                   Developer
                 </h2>
               </div>
 
-              <div className="flex h-[56px] w-auto flex-row items-start gap-4 p-0">
-                <h2 className="h-[56px] font-normal">Based In</h2>
-                <h2 className="h-[56px] font-extrabold">Indonesia.</h2>
+              <div className="flex h-[56px] flex-row items-start gap-4 p-0">
+                <h2>Based In</h2>
+                <h2 className="font-extrabold">Indonesia.</h2>
               </div>
             </div>
 
-            <p className="h-[96px] w-[600px] text-[16px] font-normal leading-[24px] tracking-[0.02em] text-zinc-500">
+            <p className="h-[96px] w-[600px] text-[16px] leading-[24px] text-zinc-500">
               I’m Muhammad Masyhuda Lorem Ipsum is simply dummy text of the
               printing and typesetting industry. Lorem Ipsum has been the
               industry's standard dummy text ever since the 1500s, when an
